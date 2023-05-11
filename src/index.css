@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+textarea, input{
+    outline: none;
+    background: none;
+}
+
+input {
+    background: none;
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+select:focus {
+    outline:none;
+}
+
+.spinner {
+    animation: spin 5s linear infinite; /* apply the "spin" animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* rotate the element 0 degrees */
+    }
+    100% {
+      transform: rotate(360deg); /* rotate the element 360 degrees */
+    }
+  }
+
+ @media (min-width:1024px) {
+    .container {
+        max-width: 900px;
+    }
+ }
